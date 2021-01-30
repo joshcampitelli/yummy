@@ -27,7 +27,7 @@ export default function SwipePage() {
             <StatusBar style="light" />
             <Header style={styles.header} />
             <Swiper
-                cards={[...data['businesses']]}
+                cards={[...Array(data['businesses'].length).keys()]}
                 renderCard={renderCard}
                 style={styles.test}
                 backgroundColor={'#292929'}
