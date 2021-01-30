@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Restaurant from '../components/Restaurant';
 
 import Swiper from 'react-native-deck-swiper'
-import * as data from '../api/test.json';
+import * as data from '../data/api-test-data.json';
 
 export default function SwipePage() {
     function renderCard(card, index) {
