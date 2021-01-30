@@ -5,35 +5,36 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Restaurant from './components/Restaurant';
 
-const images = [
-    {
-        index: 0,
-        image: require('./assets/pho-1.jpg')
-    },
-    {
-        index: 1,
-        image: require('./assets/pho-2.jpeg')
-    },
-    {
-        index: 2,
-        image: require('./assets/pho-3.jpeg')
-    },
-    {
-        index: 3,
-        image: require('./assets/pho-4.jpeg')
-    },
-    {
-        index: 4,
-        image: require('./assets/pho-5.jpg')
-    }
-];
+import Swiper from 'react-native-deck-swiper'
+import * as data from './api/test.json';
 
 export default function App() {
+    function renderCard(card, index) {
+        let distanceKm = Math.round((data['businesses'][index].distance / 1000) * 10) / 10;
+
+        return (
+            <Restaurant 
+                images={data['businesses'][index].photos} 
+                name={data['businesses'][index].name} 
+                distance={distanceKm + ' Kilometers away'}
+                price={data['businesses'][index].price} 
+                description={data['businesses'][index].categories[0].title}/>
+        )
+    };
+
     return (
         <View style={styles.container}>
             <StatusBar style="light" />
-            <Header />
-            <Restaurant images={images}/>
+            <Header style={styles.header} />
+            <Swiper
+                cards={[...data['businesses']]}
+                renderCard={renderCard}
+                style={styles.test}
+                backgroundColor={'#292929'}
+                cardVerticalMargin={80}
+                showSecondCard={true}
+                verticalSwipe={false}
+                />
             <Footer />
         </View>
     );

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import { StyleSheet, ImageBackground, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, ImageBackground, View, TouchableOpacity, ImagePropTypes } from 'react-native';
 import Indicator from './Indicator';
 import RestaurantDetails from './RestaurantDetails'
 
-export default function Restaurant({images}) {
+export default function Restaurant(props) {
     const [count, setCount] = useState(0);
-
+    let images = props.images;
     const leftPress = () => {
         if (count > 0) setCount(count - 1);
     }
@@ -14,14 +14,16 @@ export default function Restaurant({images}) {
         if (count < images.length - 1) setCount(count + 1);
     }
 
+    let image = { uri: props.images[count]}
+
     return (
         <ImageBackground
             style={styles.image}
             imageStyle={styles.imageStyle}
-            source={images[count].image}>
+            source={image}>
             <View style={styles.imageIndicators}>
-                {images.map(image => (
-                    <Indicator active={count === image.index} key={image.index} />
+                {images.map((image, index) => (
+                    <Indicator active={count === index} key={index} />
                 ))}
             </View>
             <View style={styles.touchContainer}>
@@ -29,10 +31,10 @@ export default function Restaurant({images}) {
                 <TouchableOpacity style={styles.rightNavigation} onPress={rightPress} />
             </View>
             <RestaurantDetails
-                price='$$$'
-                name='Pho bo ga la'
-                description='Vietnamese Restaurant'
-                distance='5 kilometers away' />
+                price={props.price}
+                name={props.name}
+                description={props.description}
+                distance={props.distance} />
         </ImageBackground>
     );
 }
@@ -58,7 +60,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     image: {
-        margin: 10,
+        marginTop: 10,
         marginBottom: 0,
         flex: 10,
         width: '100%'
