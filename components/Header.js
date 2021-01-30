@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
         color: '#70EFDE',
         marginTop: 30,
         fontSize: 36,
-        fontFamily: 'Noteworthy-Bold'
+        fontFamily: 'Noteworthy-Bold',
+        position: 'absolute',
+        top: 0,
+        zIndex: 1
     }
 });

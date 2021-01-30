@@ -40,11 +40,6 @@ export default function Restaurant(props) {
 }
 
 const styles = StyleSheet.create({
-    swiper: {
-        margin: 0,
-        padding: 0,
-        width: 500
-    },
     container: {
         flex: 1,
         backgroundColor: '#292929',
