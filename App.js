@@ -32,8 +32,8 @@ export default function App() {
                 style={styles.test}
                 backgroundColor={'#292929'}
                 cardVerticalMargin={80}
-                showSecondCard={true}
                 verticalSwipe={false}
+                stackSize= {2}
                 />
             <Footer />
         </View>
