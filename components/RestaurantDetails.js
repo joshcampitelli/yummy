@@ -4,8 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function RestaurantDetails(props) {
     return (
         <View style={styles.restaurantContent}>
-            <Text style={styles.text}>{props.price}</Text>
-            <Text style={styles.text}>{props.name}</Text>
+            <Text style={styles.name}>{props.name} - {props.price}</Text>
             <Text style={styles.text}>{props.description}</Text>
             <Text style={styles.text}>{props.distance}</Text>
         </View>
@@ -15,10 +14,20 @@ export default function RestaurantDetails(props) {
 const styles = StyleSheet.create({
     restaurantContent: {
         flex: 4,
-        backgroundColor: '#eeeeee90'
+        backgroundColor: '#29292990',
+        justifyContent: 'center'
+    },
+    name: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        marginLeft: 10,
+        marginRight: 10,
+        color: '#eee'
     },
     text: {
-        fontSize: 24,
-        marginLeft: 20
+        fontSize: 18,
+        marginLeft: 10,
+        marginRight: 10,
+        color: '#eee'
     }
 });
