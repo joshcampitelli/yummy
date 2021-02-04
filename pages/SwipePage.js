@@ -29,7 +29,7 @@ export default function SwipePage() {
             <Header style={styles.header} />
             <View style={styles.swiper}>
             <Swiper
-                cards={[...Array(data['businesses'].length).keys()]}
+                cards={[...data['businesses'].keys()]}
                 renderCard={renderCard}
                 backgroundColor={'#292929'}
                 cardVerticalMargin={0}
