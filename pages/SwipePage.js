@@ -26,15 +26,18 @@ export default function SwipePage() {
         <View style={styles.container}>
             <StatusBar style="light" />
             <Header style={styles.header} />
+            <View style={styles.swiper}>
             <Swiper
                 cards={[...Array(data['businesses'].length).keys()]}
                 renderCard={renderCard}
-                style={styles.test}
                 backgroundColor={'#292929'}
-                cardVerticalMargin={80}
+                cardVerticalMargin={0}
                 verticalSwipe={false}
+                cardStyle={styles.card}
+                marginBottom={10}
                 stackSize= {2}
                 />
+            </View>
             <Footer />
         </View>
     );
@@ -45,5 +48,12 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#292929',
         alignItems: 'center'
+    },
+    swiper: {
+        flex: 1,
+        width: '100%'
+    },
+    card: {
+        height: '100%'
     }
 });

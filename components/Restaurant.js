@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { StyleSheet, ImageBackground, View, TouchableOpacity, ImagePropTypes } from 'react-native';
+import { StyleSheet, ImageBackground, View, TouchableOpacity } from 'react-native';
 import Indicator from './Indicator';
 import RestaurantDetails from './RestaurantDetails'
 
@@ -9,11 +9,15 @@ export default function Restaurant(props) {
     let imageURL = { uri: props.images[count]}
 
     const leftPress = () => {
-        if (count > 0) setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     }
 
     const rightPress = () => {
-        if (count < images.length - 1) setCount(count + 1);
+        if (count < images.length - 1) {
+            setCount(count + 1);
+        }
     }
 
     return (
@@ -40,12 +44,6 @@ export default function Restaurant(props) {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#292929',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
     touchContainer: {
         flexDirection: 'row',
         flex: 18
