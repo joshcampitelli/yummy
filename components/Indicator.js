@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     indicatorActive: {
-        backgroundColor: '#70EFDE', // this is for testing purposes
+        backgroundColor: '#70EFDE'
     }, 
     indicatorInactive: {
-        backgroundColor: '#eee', // this is for testing purposes
+        backgroundColor: '#eee'
     }
 });
