@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, Image, View, TouchableOpacity } from 'react-native';
 
-const invite = require('../assets/happy.png');
-const profile = require('../assets/user_pin.png');
-const settings = require('../assets/settings_filled.png');
+import invite from '../assets/happy.png';
+import profile from '../assets/user_pin.png';
+import settings from '../assets/settings_filled.png';
 
 export default function Footer() {
     return (
