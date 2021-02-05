@@ -28,17 +28,16 @@ export default function SwipePage() {
             <StatusBar style="light" />
             <Header style={styles.header} />
             <View style={styles.swiper}>
-            <Swiper
-                cards={[...data['businesses'].keys()]}
-                renderCard={renderCard}
-                backgroundColor={'#292929'}
-                cardVerticalMargin={0}
-                verticalSwipe={false}
-                cardStyle={styles.card}
-                marginBottom={10}
-                stackSize= {2}
-                />
-            </View>
+                <Swiper
+                    cards={[...data['businesses'].keys()]}
+                    renderCard={renderCard}
+                    backgroundColor={'#292929'}
+                    cardVerticalMargin={0}
+                    verticalSwipe={false}
+                    cardStyle={styles.card}
+                    marginBottom={10}
+                    stackSize={2}/>
+                </View>
             <Footer />
         </View>
     );
