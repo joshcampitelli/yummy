@@ -41,7 +41,7 @@ export default function SwipePage() {
         )
     };
 
-    // Hide Swiper content until the GET request resturn data
+    // Hide Swiper content until the GET request returns data
     const Hide = (props) => businesses.length > 0 ? <>{props.children}</> : <></>
 
     return (
