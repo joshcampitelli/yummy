@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Restaurant from '../components/Restaurant';
+import Restaurant from '../components/swiper/Restaurant';
 import Swiper from 'react-native-deck-swiper'
 
 const url = 'http://localhost:3000/restaurant_data';
