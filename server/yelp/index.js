@@ -10,8 +10,8 @@ const _ = require('lodash');
  * @param {decimal} latitude Latitude of the location you want to search nearby.
  * @param {decimal} longitude Longitude of the location you want to search nearby.
  * @param {integer} radius A suggested search radius in meters. The max value is 40000 meters.
- * @param {integer} limit Number of business results to return maximum is 50.
  * @param {string} price Pricing levels to filter the search result with: 1 = $, 2 = $$, 3 = $$$, 4 = $$$$.
+ * @param {integer} limit Number of business results API maximum is 50, limit 5 to prevent TOO_MANY_REQUESTS error
  * @param {string} offset Offset the list of returned business results by this amount.
  */
 async function getNearby(latitude, longitude, radius, price, limit = 5, offset = 5) {
@@ -22,6 +22,7 @@ async function getNearby(latitude, longitude, radius, price, limit = 5, offset =
         price,
         limit,
         offset,
+        open_now: true
     };
 
     try {
