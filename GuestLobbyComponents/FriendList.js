@@ -18,28 +18,28 @@ export default function FriendList(props) {
   );
   
   return (
-    <View>
       <FlatList
           data={props.friends}
           renderItem={renderItem}
           keyExtractor={item => item.id}
+          contentContainerStyle={{width: Dimensions.get('window').width - 40}}
       />
-    </View>
   );
 }
 
 const styles = StyleSheet.create({
   listItem: {
     flexDirection: 'row',
-    padding: 8,
+    padding: 4,
     marginVertical: 4,
     borderColor: '#70EFDE38',
     borderWidth: 2,
     borderRadius: 8,
-    width: Dimensions.get('window').width - 20
+    width: '100%',
+    alignSelf: 'center'
   },
   title: {
-      fontSize: 24,
+      fontSize: 12,
       color: '#ffffff'
   },
   icon: {

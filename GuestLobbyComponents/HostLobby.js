@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import FriendList from './FriendList';
-import SessionCodeDisplay from './SessionCodeDisplay'
+import SessionCodeDisplay from './SessionCodeDisplay';
+import Button from './Button';
 
-export default function GuestLobby() {
+export default function HostLobby() {
 
   const friends = [
     {
@@ -33,6 +34,14 @@ export default function GuestLobby() {
     },
   ];
 
+  const onStart = () => {
+    alert('Start');
+  }
+
+  const onCancel = () => {
+    alert('Cancel');
+  }
+
   return (
     <View style={styles.container}>
 
@@ -40,7 +49,7 @@ export default function GuestLobby() {
         <Text style={styles.header}>This session</Text>
       </View>
 
-      <SessionCodeDisplay code={'JS832A'}></SessionCodeDisplay>
+      <SessionCodeDisplay code={'JS832A'} host={true}></SessionCodeDisplay>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
         <Text style={styles.headerHighlight}>{friends.length} </Text>
@@ -51,8 +60,11 @@ export default function GuestLobby() {
 
       <FriendList friends={friends}></FriendList>
   
-      <Text style={styles.header} >Waiting for host to start</Text>
-      <ActivityIndicator size='large' color='#70EFDE' style={styles.spinner} />
+
+      <View style={styles.rowContainer}>
+        <Button text="Start" primary={true} onPress={onStart}></Button>
+        <Button text="Cancel" onPress={onCancel}></Button>
+      </View>
 
       <StatusBar style="auto" />
     </View>
@@ -93,5 +105,5 @@ const styles = StyleSheet.create({
   },
   spinner: {
     padding: 15
-  },
+  }
 });
