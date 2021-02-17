@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 
 app.post('/restaurant_data', async (req, res) => {
     const { body } = req;
-    const { latitude, longitude, radius, price } = body;
-    let result = await yelp.getNearby(latitude, longitude, radius, price);
+    const { latitude, longitude, radius, price, offset } = body;
+    let result = await yelp.getNearby(latitude, longitude, radius, price, offset);
     res.send(result);
 })
 

@@ -15,12 +15,13 @@ export default function SwipePage() {
         getData();
     }, []);
 
-    async function getData() {
+    async function getData(offset = 0) {
         let data = {
             latitude: 44.428600,
             longitude: -78.273560,
             radius: 20000,
-            price: '1, 2, 3, 4'
+            price: '1, 2, 3, 4',
+            offset
         }
 
         try {
