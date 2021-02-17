@@ -12,8 +12,9 @@ const _ = require('lodash');
  * @param {integer} radius A suggested search radius in meters. The max value is 40000 meters.
  * @param {integer} limit Number of business results to return maximum is 50.
  * @param {string} price Pricing levels to filter the search result with: 1 = $, 2 = $$, 3 = $$$, 4 = $$$$.
+ * @param {string} offset Offset the list of returned business results by this amount.
  */
-async function getNearby(latitude, longitude, radius, limit, price) {
+async function getNearby(latitude, longitude, radius, limit, price, offset) {
     const searchRequest = {
         latitude,
         longitude,
@@ -21,13 +22,13 @@ async function getNearby(latitude, longitude, radius, limit, price) {
         limit,
         price,
         open_now: true,
-        offset: 4
+        offset
     };
 
     try {
         let result = await client.search(searchRequest);
-        let test = _.map(result.jsonBody.businesses, business => getDetails(business));
-        const businesses = await Promise.all(test);
+        let businessDetails = _.map(result.jsonBody.businesses, business => getDetails(business));
+        const businesses = await Promise.all(businessDetails);
         return JSON.stringify(businesses, null, 4);
     } catch(err) {
         console.log(err);
