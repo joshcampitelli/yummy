@@ -1,13 +1,17 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
 const yelp = require('./yelp');
 const cors = require('cors');
 
 app.use(cors());
+app.use(bodyParser.json());
 
-app.get('/restaurant_data', async (req, res) => {
-    let result = await yelp.getNearby(44.428600, -78.273560, 20000, 5, '1, 2, 3, 4', 5);
+app.post('/restaurant_data', async (req, res) => {
+    const { body } = req;
+    const { latitude, longitude, radius, price } = body;
+    let result = await yelp.getNearby(latitude, longitude, radius, price);
     res.send(result);
 })
 

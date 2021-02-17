@@ -14,15 +14,14 @@ const _ = require('lodash');
  * @param {string} price Pricing levels to filter the search result with: 1 = $, 2 = $$, 3 = $$$, 4 = $$$$.
  * @param {string} offset Offset the list of returned business results by this amount.
  */
-async function getNearby(latitude, longitude, radius, limit, price, offset) {
+async function getNearby(latitude, longitude, radius, price, limit = 5, offset = 5) {
     const searchRequest = {
         latitude,
         longitude,
         radius,
-        limit,
         price,
-        open_now: true,
-        offset
+        limit,
+        offset,
     };
 
     try {

@@ -16,9 +16,18 @@ export default function SwipePage() {
     }, []);
 
     async function getData() {
+        let data = {
+            latitude: 44.428600,
+            longitude: -78.273560,
+            radius: 20000,
+            price: '1, 2, 3, 4'
+        }
+
         try {
             let results = await fetch(url, {
-                method: 'GET'
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: { 'Content-type': 'application/json' }
             });
 
             setBusinesses(await results.json());
