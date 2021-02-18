@@ -1,0 +1,747 @@
+{
+    "businesses": [
+        {
+            "id": "PCz2kippn2fTs5-pAwEJ_Q",
+            "alias": "riviera-ottawa",
+            "name": "Riviera",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/87R0vjDZiadbps8sMfGixg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/riviera-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 87,
+            "categories": [
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.42274,
+                "longitude": -75.69598
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "62 Sparks Street",
+                "address2": "",
+                "address3": null,
+                "city": "Ottawa",
+                "zip_code": "K1P 5A5",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "62 Sparks Street",
+                    "Ottawa, ON K1P 5A5",
+                    "Canada"
+                ]
+            },
+            "phone": "+16132336262",
+            "display_phone": "+1 613-233-6262",
+            "distance": 211.98718224722944,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/87R0vjDZiadbps8sMfGixg/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/jzy7pGhLeYtbl4W5MD20sw/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/IttXU-AVY9xWqUoLTwzS3A/o.jpg"
+            ]
+        },
+        {
+            "id": "XIxwJaAeM20jkW5X8LiVeg",
+            "alias": "weis-noodle-house-ottawa",
+            "name": "Wei's Noodle House",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/OZQtJDcdL6Lq6i0Rdl4hGQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/weis-noodle-house-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 17,
+            "categories": [
+                {
+                    "alias": "vietnamese",
+                    "title": "Vietnamese"
+                },
+                {
+                    "alias": "noodles",
+                    "title": "Noodles"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 45.40406,
+                "longitude": -75.70179
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "610 Bronson Ave",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1S 4E6",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "610 Bronson Ave",
+                    "Ottawa, ON K1S 4E6",
+                    "Canada"
+                ]
+            },
+            "phone": "+16132306815",
+            "display_phone": "+1 613-230-6815",
+            "distance": 2357.737687735883,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/OZQtJDcdL6Lq6i0Rdl4hGQ/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/iHYLqXurn3H5TRnpRD19LA/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/Qpemi2QmOjSDEY1iQ0-yOQ/o.jpg"
+            ]
+        },
+        {
+            "id": "CWwXzZu_ITzyRgX2sv0IRw",
+            "alias": "joey-rideau-ottawa",
+            "name": "JOEY Rideau",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/f3aQdXVRCtExkQ6osj9_nw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/joey-rideau-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 75,
+            "categories": [
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4263960461085,
+                "longitude": -75.6905810407226
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "50 Rideau Street",
+                "address2": "E106",
+                "address3": null,
+                "city": "OTTAWA",
+                "zip_code": "K1N 9J7",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "50 Rideau Street",
+                    "E106",
+                    "OTTAWA, ON K1N 9J7",
+                    "Canada"
+                ]
+            },
+            "phone": "+16136805639",
+            "display_phone": "+1 613-680-5639",
+            "distance": 391.9415566497332,
+            "photos": [
+                "https://s3-media1.fl.yelpcdn.com/bphoto/f3aQdXVRCtExkQ6osj9_nw/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/_AyA1mLtlG5bNlPmiPVfAg/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/OFbBdXRA4j1tgfxX00ro_A/o.jpg"
+            ]
+        },
+        {
+            "id": "_W9Wr7_ru8rPe_ATdqIH7w",
+            "alias": "milestones-restaurants-ottawa-3",
+            "name": "Milestones Restaurants",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dRjnU0PMVk1caFhNtuo3dg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/milestones-restaurants-ottawa-3?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 95,
+            "categories": [
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                },
+                {
+                    "alias": "comfortfood",
+                    "title": "Comfort Food"
+                },
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.42559662033439,
+                "longitude": -75.6941517354431
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "700 Sussex Dr",
+                "address2": "Unit 201",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 1K4",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "700 Sussex Dr",
+                    "Unit 201",
+                    "Ottawa, ON K1N 1K4",
+                    "Canada"
+                ]
+            },
+            "phone": "+16137895432",
+            "display_phone": "+1 613-789-5432",
+            "distance": 117.7378213875105,
+            "photos": [
+                "https://s3-media1.fl.yelpcdn.com/bphoto/dRjnU0PMVk1caFhNtuo3dg/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/nCQ-E1oYP3R3YG73JA-KNg/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/VrsKBjsCjhpRw8SLiLaKrw/o.jpg"
+            ]
+        },
+        {
+            "id": "IeQNKf1szPuLtq23u9BXyA",
+            "alias": "town-ottawa",
+            "name": "Town",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/g_S1vDFppgKJbtvX-JknIA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/town-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 146,
+            "categories": [
+                {
+                    "alias": "italian",
+                    "title": "Italian"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.4166878,
+                "longitude": -75.6896973
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "296 Elgin Street",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K2P 1M3",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "296 Elgin Street",
+                    "Ottawa, ON K2P 1M3",
+                    "Canada"
+                ]
+            },
+            "phone": "+16136958696",
+            "display_phone": "+1 613-695-8696",
+            "distance": 984.467555323491,
+            "photos": [
+                "https://s3-media3.fl.yelpcdn.com/bphoto/g_S1vDFppgKJbtvX-JknIA/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/xf8AnmIJEGtV8OLTcfrcaQ/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/_9SAVjFe6SynvxPhYiEHEQ/o.jpg"
+            ]
+        },
+        {
+            "id": "Dx-TzKEpnA0SFpJ8WU1O3g",
+            "alias": "prohibition-public-house-ottawa",
+            "name": "Prohibition Public House",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6pA0kLmKNzLMqmtirFfqtA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/prohibition-public-house-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 54,
+            "categories": [
+                {
+                    "alias": "gastropubs",
+                    "title": "Gastropubs"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.41599,
+                "longitude": -75.69552
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "337 Somerset Street W",
+                "address2": "",
+                "address3": null,
+                "city": "Ottawa",
+                "zip_code": "K2P 0J8",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "337 Somerset Street W",
+                    "Ottawa, ON K2P 0J8",
+                    "Canada"
+                ]
+            },
+            "phone": "+16135652704",
+            "display_phone": "+1 613-565-2704",
+            "distance": 974.4874425563382,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/6pA0kLmKNzLMqmtirFfqtA/o.jpg",
+                "https://s3-media3.fl.yelpcdn.com/bphoto/4q6ifvP-Nz2b_IwXkoccxg/o.jpg",
+                "https://s3-media4.fl.yelpcdn.com/bphoto/OpTb03FGWy81-gKL629QoA/o.jpg"
+            ]
+        },
+        {
+            "id": "X1BPPEUTBOnF4jVEJ_LDnw",
+            "alias": "el-camino-ottawa",
+            "name": "El Camino",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-1Tzkyp560ZevXAQ4Pvmlw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/el-camino-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 272,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4147939746995,
+                "longitude": -75.6879332269847
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "380 Elgin Street",
+                "address2": "Unit D",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K2P 1M9",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "380 Elgin Street",
+                    "Unit D",
+                    "Ottawa, ON K2P 1M9",
+                    "Canada"
+                ]
+            },
+            "phone": "+16134222800",
+            "display_phone": "+1 613-422-2800",
+            "distance": 1233.9598594202982,
+            "photos": [
+                "https://s3-media1.fl.yelpcdn.com/bphoto/-1Tzkyp560ZevXAQ4Pvmlw/o.jpg",
+                "https://s3-media3.fl.yelpcdn.com/bphoto/1tVGhv1VccrBnXjiuoYfXA/o.jpg",
+                "https://s3-media4.fl.yelpcdn.com/bphoto/dA93zntxsNyLWTnw75dqQQ/o.jpg"
+            ]
+        },
+        {
+            "id": "y6lPwbf8GAYM_M4XdxXCRA",
+            "alias": "sidedoor-contemporary-kitchen-and-bar-ottawa",
+            "name": "Sidedoor Contemporary Kitchen & Bar",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/MmojUwcmfjyYzlUKlPegPQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/sidedoor-contemporary-kitchen-and-bar-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 126,
+            "categories": [
+                {
+                    "alias": "tapasmallplates",
+                    "title": "Tapas/Small Plates"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4273346,
+                "longitude": -75.6940098
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "18B York St",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 5T5",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "18B York St",
+                    "Ottawa, ON K1N 5T5",
+                    "Canada"
+                ]
+            },
+            "phone": "+16135629331",
+            "display_phone": "+1 613-562-9331",
+            "distance": 300.7169390742274,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/MmojUwcmfjyYzlUKlPegPQ/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/Q4onoMmJZEt3TjivedHrQw/o.jpg",
+                "https://s3-media4.fl.yelpcdn.com/bphoto/PdTJ1hCBiQBQt0f11J-53Q/o.jpg"
+            ]
+        },
+        {
+            "id": "Ey1azXaPPCdfcHDezNEFkA",
+            "alias": "fairouz-ottawa",
+            "name": "Fairouz",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/tujtN1Km1Rc2ji3pECsIjQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/fairouz-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 45,
+            "categories": [
+                {
+                    "alias": "mideastern",
+                    "title": "Middle Eastern"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4283732,
+                "longitude": -75.695106
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "15 Clarence St.",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 5P4",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "15 Clarence St.",
+                    "Ottawa, ON K1N 5P4",
+                    "Canada"
+                ]
+            },
+            "phone": "+16134227700",
+            "display_phone": "+1 613-422-7700",
+            "distance": 406.1899013693883,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/tujtN1Km1Rc2ji3pECsIjQ/o.jpg",
+                "https://s3-media4.fl.yelpcdn.com/bphoto/MpAYg0LyMwDP3YpERB_e3Q/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/JXLEbsDi-QiEQDAfMmqgMQ/o.jpg"
+            ]
+        },
+        {
+            "id": "J1B_vEvWgkYyYt7D3rmVJQ",
+            "alias": "play-food-and-wine-ottawa",
+            "name": "Play Food And Wine",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kM6I288idXODjCy1JJ-P8w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/play-food-and-wine-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 212,
+            "categories": [
+                {
+                    "alias": "wine_bars",
+                    "title": "Wine Bars"
+                },
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                },
+                {
+                    "alias": "tapasmallplates",
+                    "title": "Tapas/Small Plates"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4276304284579,
+                "longitude": -75.6948116927303
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "1 York Street",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 5S7",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "1 York Street",
+                    "Ottawa, ON K1N 5S7",
+                    "Canada"
+                ]
+            },
+            "phone": "+16136679207",
+            "display_phone": "+1 613-667-9207",
+            "distance": 323.8469190654208,
+            "photos": [
+                "https://s3-media1.fl.yelpcdn.com/bphoto/kM6I288idXODjCy1JJ-P8w/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/UKiCyRAIXD4HJYd-ZV3P_w/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/7CN1pQ8mwSqJWvAxFzOkOg/o.jpg"
+            ]
+        },
+        {
+            "id": "CNAi8osKxH-Y9sp66-svdg",
+            "alias": "sansotei-ramen-ottawa",
+            "name": "Sansotei Ramen",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/T9HyCZrYH2T43FrpGBIlFg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/sansotei-ramen-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 298,
+            "categories": [
+                {
+                    "alias": "ramen",
+                    "title": "Ramen"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.41898,
+                "longitude": -75.69908
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "153 Bank Street",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1P 5N7",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "153 Bank Street",
+                    "Ottawa, ON K1P 5N7",
+                    "Canada"
+                ]
+            },
+            "phone": "+16136951718",
+            "display_phone": "+1 613-695-1718",
+            "distance": 724.2110977377762,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/T9HyCZrYH2T43FrpGBIlFg/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/fA58t2Vt7faJTBn-5CvPow/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/oFLDaLw3LOW7gAhdtwF7wQ/o.jpg"
+            ]
+        },
+        {
+            "id": "9Qbx-yT724RFmJRhj4jXUw",
+            "alias": "lift-restaurant-ottawa",
+            "name": "Lift Restaurant",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/blIJVw4c_LziUDmguDYnaQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/lift-restaurant-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 11,
+            "categories": [
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.4184911,
+                "longitude": -75.704231
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "101 Lyon Street",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1R",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "101 Lyon Street",
+                    "Ottawa, ON K1R",
+                    "Canada"
+                ]
+            },
+            "phone": "+16136886802",
+            "display_phone": "+1 613-688-6802",
+            "distance": 999.4571965448788,
+            "photos": [
+                "https://s3-media4.fl.yelpcdn.com/bphoto/blIJVw4c_LziUDmguDYnaQ/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/5CNvOR2PWiNmCTBzAvmLkQ/o.jpg",
+                "https://s3-media1.fl.yelpcdn.com/bphoto/CNg5zMoyxQIWOqLxL5hrUw/o.jpg"
+            ]
+        },
+        {
+            "id": "84y9MEGv4sqbtxgbIbvWAg",
+            "alias": "bennys-bistro-ottawa",
+            "name": "Benny's Bistro",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Ax4mWG14_b_hO8Z4XQXpgw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bennys-bistro-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 112,
+            "categories": [
+                {
+                    "alias": "bistros",
+                    "title": "Bistros"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.4301472,
+                "longitude": -75.6926331
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "119 Murray St",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 5M5",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "119 Murray St",
+                    "Ottawa, ON K1N 5M5",
+                    "Canada"
+                ]
+            },
+            "phone": "+16137897941",
+            "display_phone": "+1 613-789-7941",
+            "distance": 631.0044242145395,
+            "photos": [
+                "https://s3-media1.fl.yelpcdn.com/bphoto/Ax4mWG14_b_hO8Z4XQXpgw/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/AJdg7KfATq4N6f8dHENRbA/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/wgeheQXdMy2LVAxV2tMF_Q/o.jpg"
+            ]
+        },
+        {
+            "id": "dLim6ecsanGkkbwj_bLskA",
+            "alias": "social-restaurant-and-lounge-ottawa",
+            "name": "Social Restaurant and Lounge",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/X6D1DY3lYApmH7vc5VdJRA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/social-restaurant-and-lounge-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 75,
+            "categories": [
+                {
+                    "alias": "french",
+                    "title": "French"
+                },
+                {
+                    "alias": "lounges",
+                    "title": "Lounges"
+                },
+                {
+                    "alias": "newcanadian",
+                    "title": "Canadian (New)"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4267006,
+                "longitude": -75.6942005
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "537 Sussex Drive",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 6Z6",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "537 Sussex Drive",
+                    "Ottawa, ON K1N 6Z6",
+                    "Canada"
+                ]
+            },
+            "phone": "+16137897355",
+            "display_phone": "+1 613-789-7355",
+            "distance": 228.79306024335347,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/X6D1DY3lYApmH7vc5VdJRA/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/02xsBQB57A7kcIIptT8j7Q/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/ZbRCb36O20WhVxTMDdAQag/o.jpg"
+            ]
+        },
+        {
+            "id": "sR85arLLZegQydCEO-8F2w",
+            "alias": "corazón-de-maíz-ottawa-2",
+            "name": "Corazón De Maíz",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/AF9Dsqdk5kwIhAD0zfj9Vw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/coraz%C3%B3n-de-ma%C3%ADz-ottawa-2?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 89,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 45.4277696,
+                "longitude": -75.6924445
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "55 ByWard Market Sq",
+                "address2": "Byward Market Square",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K1N 9C3",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "55 ByWard Market Sq",
+                    "Byward Market Square",
+                    "Ottawa, ON K1N 9C3",
+                    "Canada"
+                ]
+            },
+            "phone": "+16132441661",
+            "display_phone": "+1 613-244-1661",
+            "distance": 393.3007566495327,
+            "photos": [
+                "https://s3-media4.fl.yelpcdn.com/bphoto/AF9Dsqdk5kwIhAD0zfj9Vw/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/OrW350td6QKj3RHLMYN1Bg/o.jpg",
+                "https://s3-media3.fl.yelpcdn.com/bphoto/ijp_2-WRVTKRWDTLVTCG6w/o.jpg"
+            ]
+        },
+        {
+            "id": "BqgmxTMu9iR1E7HOPepJ-A",
+            "alias": "datsun-ottawa",
+            "name": "Datsun",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JJ0TAf4dhaohMrXg__4PjA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/datsun-ottawa?adjust_creative=WQgZcAP5sj2nHjgjFV3JcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WQgZcAP5sj2nHjgjFV3JcA",
+            "review_count": 70,
+            "categories": [
+                {
+                    "alias": "asianfusion",
+                    "title": "Asian Fusion"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4146720363185,
+                "longitude": -75.6878773603284
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "380 Elgin Street",
+                "address2": "",
+                "address3": "",
+                "city": "Ottawa",
+                "zip_code": "K2P 1M9",
+                "country": "CA",
+                "state": "ON",
+                "display_address": [
+                    "380 Elgin Street",
+                    "Ottawa, ON K2P 1M9",
+                    "Canada"
+                ]
+            },
+            "phone": "+16134217411",
+            "display_phone": "+1 613-421-7411",
+            "distance": 1248.040019625176,
+            "photos": [
+                "https://s3-media2.fl.yelpcdn.com/bphoto/JJ0TAf4dhaohMrXg__4PjA/o.jpg",
+                "https://s3-media3.fl.yelpcdn.com/bphoto/bkYmj_R_xhqJJ_Wxekm1_Q/o.jpg",
+                "https://s3-media2.fl.yelpcdn.com/bphoto/ehXJkMF5icTkHpbJjiPmDQ/o.jpg"
+            ]
+        }
+    ],
+    "total": 1500,
+    "region": {
+        "center": {
+            "longitude": -75.695,
+            "latitude": 45.424721
+        }
+    }
+}
