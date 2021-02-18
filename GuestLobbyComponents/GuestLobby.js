@@ -40,7 +40,7 @@ export default function GuestLobby() {
         <Text style={styles.header}>This session</Text>
       </View>
 
-      <SessionCodeDisplay code={'JS832A'}></SessionCodeDisplay>
+      <SessionCodeDisplay code={'JS832A'}/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
         <Text style={styles.headerHighlight}>{friends.length} </Text>
@@ -49,7 +49,7 @@ export default function GuestLobby() {
 
       <View style={styles.horizontalRule}></View>
 
-      <FriendList friends={friends}></FriendList>
+      <FriendList friends={friends}/>
   
       <Text style={styles.header} >Waiting for host to start</Text>
       <ActivityIndicator size='large' color='#70EFDE' style={styles.spinner} />

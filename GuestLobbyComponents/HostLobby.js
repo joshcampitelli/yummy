@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import FriendList from './FriendList';
 import SessionCodeDisplay from './SessionCodeDisplay';
-import Button from './Button';
+import LobbyButton from './LobbyButton';
 
 export default function HostLobby() {
 
@@ -49,21 +49,21 @@ export default function HostLobby() {
         <Text style={styles.header}>This session</Text>
       </View>
 
-      <SessionCodeDisplay code={'JS832A'} host={true}></SessionCodeDisplay>
+      <SessionCodeDisplay code={'JS832A'} host={true}/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
         <Text style={styles.headerHighlight}>{friends.length} </Text>
         <Text style={styles.header}>Joined</Text>
       </View>
 
-      <View style={styles.horizontalRule}></View>
+      <View style={styles.horizontalRule}/>
 
-      <FriendList friends={friends}></FriendList>
+      <FriendList friends={friends}/>
   
 
       <View style={styles.rowContainer}>
-        <Button text="Start" primary={true} onPress={onStart}></Button>
-        <Button text="Cancel" onPress={onCancel}></Button>
+        <LobbyButton text="Start" primary={true} onPress={onStart}/>
+        <LobbyButton text="Cancel" onPress={onCancel}/>
       </View>
 
       <StatusBar style="auto" />

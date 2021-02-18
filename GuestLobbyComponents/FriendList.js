@@ -32,15 +32,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 4,
     marginVertical: 4,
-    borderColor: '#70EFDE38',
-    borderWidth: 2,
-    borderRadius: 8,
     width: '100%',
     alignSelf: 'center'
   },
   title: {
       fontSize: 12,
-      color: '#ffffff'
+      color: '#ffffff',
+      margin: 6
   },
   icon: {
     color: '#70EFDE',

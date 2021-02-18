@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export default function Button(props) {
+export default function LobbyButton(props) {
 
   return (
     <TouchableOpacity style={[styles.button, {backgroundColor: props.primary ? '#70EFDE' : '#DADADA'}]} onPress={props.onPress}>
