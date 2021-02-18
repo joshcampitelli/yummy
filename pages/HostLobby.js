@@ -1,9 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import FriendList from './FriendList';
-import SessionCodeDisplay from './SessionCodeDisplay';
-import LobbyButton from './LobbyButton';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import FriendList from '../components/LobbyComponents/FriendList';
+import SessionCodeDisplay from '../components/LobbyComponents/SessionCodeDisplay';
+import LobbyButton from '../components/LobbyComponents/LobbyButton';
 
 export default function HostLobby() {
 
@@ -44,6 +45,7 @@ export default function HostLobby() {
 
   return (
     <View style={styles.container}>
+      <Header/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
         <Text style={styles.header}>This session</Text>
@@ -66,7 +68,7 @@ export default function HostLobby() {
         <LobbyButton text="Cancel" onPress={onCancel}/>
       </View>
 
-      <StatusBar style="auto" />
+      <Footer/>
     </View>
   );
 }

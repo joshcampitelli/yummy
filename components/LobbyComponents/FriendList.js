@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, SafeAreaView, FlatList, Dimensions, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -22,7 +21,7 @@ export default function FriendList(props) {
           data={props.friends}
           renderItem={renderItem}
           keyExtractor={item => item.id}
-          contentContainerStyle={{width: Dimensions.get('window').width - 40}}
+          contentContainerStyle={{width: Dimensions.get('window').width - 40, height: 400}}
       />
   );
 }

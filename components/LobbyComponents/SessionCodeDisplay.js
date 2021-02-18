@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
-import  Slider  from '@react-native-community/slider';
 import LabeledSlider from './LabeledSlider';
 
 export default function SessionCodeDisplay(props) {

@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, ActivityIndicator } from 'react-native';
-import FriendList from './FriendList';
-import SessionCodeDisplay from './SessionCodeDisplay'
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import FriendList from '../components/LobbyComponents/FriendList';
+import SessionCodeDisplay from '../components/LobbyComponents/SessionCodeDisplay'
 
 export default function GuestLobby() {
 
@@ -35,6 +37,7 @@ export default function GuestLobby() {
 
   return (
     <View style={styles.container}>
+      <Header/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
         <Text style={styles.header}>This session</Text>
@@ -54,7 +57,7 @@ export default function GuestLobby() {
       <Text style={styles.header} >Waiting for host to start</Text>
       <ActivityIndicator size='large' color='#70EFDE' style={styles.spinner} />
 
-      <StatusBar style="auto" />
+      <Footer/>
     </View>
   );
 }
