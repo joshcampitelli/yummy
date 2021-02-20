@@ -16,11 +16,11 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		margin: 20,	
 		borderRadius: 50,
-		width: 150,
-		height: 60
+		width: 120,
+		height: 40
 	},
 	text: {
 		color: '#000000',
-		fontSize: 24,
+		fontSize: 16,
 	}
 });

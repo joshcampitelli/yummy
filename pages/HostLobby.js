@@ -54,7 +54,7 @@ export default function HostLobby() {
       <SessionCodeDisplay code={'JS832A'} host={true}/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
-        <Text style={styles.headerHighlight}>{friends.length} </Text>
+        <Text style={[styles.header, {color: '#70EFDE' }]}>{friends.length} </Text>
         <Text style={styles.header}>Joined</Text>
       </View>
 
@@ -62,7 +62,6 @@ export default function HostLobby() {
 
       <FriendList friends={friends}/>
   
-
       <View style={styles.rowContainer}>
         <LobbyButton text="Start" primary={true} onPress={onStart}/>
         <LobbyButton text="Cancel" onPress={onCancel}/>
@@ -90,14 +89,8 @@ const styles = StyleSheet.create({
   header: {
     color: '#ffffff',
     fontSize: 16,
-    paddingTop: 30,
+    paddingTop: 10,
     paddingBottom: 5,
-  },
-  headerHighlight: {
-    color: '#70EFDE',
-    fontSize: 16,
-    paddingTop: 30,
-    paddingBottom: 10,
   },
   horizontalRule: {
     width: '95%',

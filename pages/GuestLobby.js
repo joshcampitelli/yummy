@@ -46,7 +46,7 @@ export default function GuestLobby() {
       <SessionCodeDisplay code={'JS832A'}/>
 
       <View style={[styles.rowContainer, styles.flexStartContainer]}>
-        <Text style={styles.headerHighlight}>{friends.length} </Text>
+        <Text style={[styles.header, {color: '#70EFDE' }]}>{friends.length} </Text>
         <Text style={styles.header}>Joined</Text>
       </View>
 
@@ -79,14 +79,8 @@ const styles = StyleSheet.create({
   header: {
     color: '#ffffff',
     fontSize: 16,
-    paddingTop: 30,
+    paddingTop: 10,
     paddingBottom: 5,
-  },
-  headerHighlight: {
-    color: '#70EFDE',
-    fontSize: 16,
-    paddingTop: 30,
-    paddingBottom: 10,
   },
   horizontalRule: {
     width: '95%',

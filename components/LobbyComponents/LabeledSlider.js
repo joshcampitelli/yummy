@@ -35,7 +35,7 @@ export default function LabeledSlider(props) {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 40,
+    margin: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
   subText1: {
     color: "#ffffff",
-    fontSize: 18
+    fontSize: 12
   },
   subText2: {
     color: "#808080",
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
   },
   slider: {
     width: 250,
-    height: 40
+    height: 20
   }
 });

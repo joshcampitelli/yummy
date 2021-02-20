@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   title: {
       fontSize: 12,
       color: '#ffffff',
-      margin: 6
+      margin: 2
   },
   icon: {
     color: '#70EFDE',

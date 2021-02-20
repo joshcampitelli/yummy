@@ -19,7 +19,7 @@ export default function SessionCodeDisplay(props) {
         
         <TouchableOpacity style = {styles.invisButton} onPress={onCopyCode}>
           <FontAwesomeIcon icon={ faCopy } style={styles.icon}/>
-          <Text style={styles.subText1}>Copy</Text>
+          <Text style={styles.subText}>Copy</Text>
         </TouchableOpacity>
 
         {searchRadiusSlider}
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     borderWidth: 4,
     borderRadius: 20,
     width: '90%',
-    height: '40%',
+    height: '35%',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -45,11 +45,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   codeText: {
-      fontSize: 48,
-      color: '#70EFDE',
-      marginTop: 40
+      fontSize: 40,
+      color: '#70EFDE', 
   },
-  subText1: {
+  subText: {
     color: "#ffffff",
     fontSize: 18
   },
