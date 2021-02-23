@@ -10,6 +10,7 @@ const url = 'http://localhost:3000/restaurant_data';
 
 export default function SwipePage() {
     const [businesses, setBusinesses] = useState([]);
+    const [cardIndex, setCardIndex] = useState(0); 
 
     useEffect(() => {
         getData();
@@ -17,8 +18,8 @@ export default function SwipePage() {
 
     async function getData(offset = 0) {
         let data = {
-            latitude: 44.428600,
-            longitude: -78.273560,
+            latitude: 45.421532,
+            longitude: -75.697189,
             radius: 20000,
             price: '1, 2, 3, 4',
             offset
@@ -31,7 +32,8 @@ export default function SwipePage() {
                 headers: { 'Content-type': 'application/json' }
             });
 
-            setBusinesses(await results.json());
+            let content = await results.json();
+            setBusinesses(businesses.concat(content));
         } catch (error) {
             console.log(error);
         }
@@ -51,6 +53,14 @@ export default function SwipePage() {
         )
     };
 
+    function swiped(index) {
+        if ((index - 2) % 5 === 0) {
+            getData(index + 3);
+        }
+
+        setCardIndex(index + 1);
+    }
+
     // Hide Swiper content until the GET request returns data
     const Hide = (props) => businesses.length > 0 ? <>{props.children}</> : <></>
 
@@ -63,6 +73,8 @@ export default function SwipePage() {
                     <Swiper
                         cards={businesses}
                         renderCard={renderCard}
+                        onSwiped={swiped}
+                        cardIndex={cardIndex}
                         backgroundColor={'#292929'}
                         cardVerticalMargin={0}
                         verticalSwipe={false}
