@@ -7,7 +7,7 @@ const Textfield = (props) => {
             placeholder={props.placeholder}
             placeholderTextColor="#ccc"
             style={styles.input}
-            onChange={(event) => props.onChange(event.target.value)} />
+            onChangeText={props.onChange} />
     );
 }
 
