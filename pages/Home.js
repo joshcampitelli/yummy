@@ -8,7 +8,7 @@ import Button from '../components/primitive/Button';
 import Divider from '../components/primitive/Divider';
 import Textfield from '../components/primitive/Textfield';
 
-const Home = (props) => {
+const Home = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
@@ -27,7 +27,7 @@ const Home = (props) => {
                 <Text style={styles.header2}>👭 Friends waiting?</Text>
                 <Textfield placeholder='J9SBA2'/>
                 <View style={{ marginVertical: 16, width: "80%" }}>
-                    <Button title='Join'/>
+                    <Button title='Join' onPress={() => navigation.navigate('Swiping')} />
                 </View>
             </View>
             <Footer />
@@ -67,9 +67,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom: 24
     },
-    card: {
-        height: '100%'
-    }
 });
 
 export default Home;

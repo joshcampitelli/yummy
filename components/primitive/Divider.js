@@ -3,11 +3,11 @@ import { StyleSheet, View } from 'react-native';
 
 const Divider = (props) => {
     return (
-        <View style={styles.divider} />
+        <View style={styles(props).divider} />
     );
 }
 
-const styles = StyleSheet.create({
+const styles = (props) => StyleSheet.create({
     divider: {
         height: props.height,
         backgroundColor: '#fff',
