@@ -19,7 +19,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        opacity: disabled ? 0.3: 1,
+        opacity: disabled ? 0.3 : 1,
     }),
     ...StyleSheet.create({
         text: {
