@@ -13,20 +13,20 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <StatusBar style="light" />
-            <Header style={styles.header} />
+            <Header style={styles.header(48)} />
             <View style={styles.body}>
-                <Text style={styles.header}>Discover your next meal</Text>
-                <View style={{ width: "80%", padding: 0 }}>
+                <Text style={styles.header(48)}>Discover your next meal</Text>
+                <View style={styles.containers.createRoom}>
                     <Button title='Create room'/>
                 </View>
 
-                <View style={{ width: "100%", marginVertical: 64 }}>
+                <View style={styles.containers.divider}>
                     <Divider height={1} />
                 </View>
 
-                <Text style={styles.header2}>👭 Friends waiting?</Text>
+                <Text style={styles.header(36)}>👭 Friends waiting?</Text>
                 <Textfield placeholder='J9SBA2'/>
-                <View style={{ marginVertical: 16, width: "80%" }}>
+                <View style={styles.containers.joinRoom}>
                     <Button title='Join' onPress={() => navigation.navigate('Swiping')} />
                 </View>
             </View>
@@ -35,38 +35,43 @@ const Home = ({ navigation }) => {
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#292929',
-        alignItems: 'center'
-    },
-    body: {
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        margin: 0,
-        padding: 0,
-        width: '80%',
-    },
-    header: {
+const styles = {
+    header: (size) => StyleSheet.flatten({
         color: '#fff',
-        fontSize: 48,
+        fontSize: size,
         padding: 0,
         margin: 0,
         textAlign: 'center',
         marginBottom: 24
-    },
-    header2: {
-        color: '#fff',
-        fontSize: 36,
-        padding: 0,
-        margin: 0,
-        textAlign: 'center',
-        marginBottom: 24
-    },
-});
-
+    }),
+    containers: StyleSheet.create({
+        root: {
+            flex: 1,
+            backgroundColor: '#292929',
+            alignItems: 'center'
+        },
+        body: {
+            flex: 1,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            margin: 0,
+            padding: 0,
+            width: '80%',
+        },
+        createRoom: {
+            width: "80%",
+            padding: 0,
+        },
+        joinRoom: {
+            width: "80%",
+            marginVertical: "16px",
+        },
+        divider: {
+            width: "100%",
+            marginVertical: "64px",
+        },
+    }),
+}
 export default Home;
