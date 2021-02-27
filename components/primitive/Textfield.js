@@ -3,7 +3,11 @@ import { StyleSheet, TextInput } from 'react-native';
 
 const Textfield = (props) => {
     return (
-        <TextInput placeholder={props.placeholder} placeholderTextColor="#ccc" style={styles.input} />
+        <TextInput
+            placeholder={props.placeholder}
+            placeholderTextColor="#ccc"
+            style={styles.input}
+            onChange={(event) => props.onChange(event.target.value)} />
     );
 }
 

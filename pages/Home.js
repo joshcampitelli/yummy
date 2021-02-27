@@ -10,11 +10,13 @@ import Textfield from '../components/primitive/Textfield';
 
 const Home = ({ navigation }) => {
 
+    const [ join, setJoinText ] = React.useState('');
+
     return (
-        <View style={styles.container}>
+        <View style={styles.containers.root}>
             <StatusBar style="light" />
             <Header style={styles.header(48)} />
-            <View style={styles.body}>
+            <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
                 <View style={styles.containers.createRoom}>
                     <Button title='Create room'/>
@@ -25,9 +27,9 @@ const Home = ({ navigation }) => {
                 </View>
 
                 <Text style={styles.header(36)}>👭 Friends waiting?</Text>
-                <Textfield placeholder='J9SBA2'/>
+                <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
                 <View style={styles.containers.joinRoom}>
-                    <Button title='Join' onPress={() => navigation.navigate('Swiping')} />
+                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('Swiping')} />
                 </View>
             </View>
             <Footer />
