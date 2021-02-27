@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, Text } from 'react-native';
 
-const YButton = (props) => {
+const Button = (props) => {
     return (
         <TouchableOpacity
             style={styles.button(props.disabled)}
@@ -30,4 +30,4 @@ const styles = {
     })
 };
 
-export default YButton;
+export default Button;

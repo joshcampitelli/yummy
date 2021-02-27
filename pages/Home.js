@@ -14,7 +14,7 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={styles.containers.root}>
-            <StatusBar style="light" />
+            <StatusBar style='light' />
             <Header style={styles.header(48)} />
             <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
@@ -63,16 +63,16 @@ const styles = {
             width: '80%',
         },
         createRoom: {
-            width: "80%",
+            width: '80%',
             padding: 0,
         },
         joinRoom: {
-            width: "80%",
-            marginVertical: "16px",
+            width: '80%',
+            marginVertical: 16,
         },
         divider: {
-            width: "100%",
-            marginVertical: "64px",
+            width: '100%',
+            marginVertical: 64,
         },
     }),
 }
