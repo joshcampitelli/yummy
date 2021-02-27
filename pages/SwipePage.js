@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Restaurant from '../components/swiper/Restaurant';
@@ -61,8 +61,14 @@ export default function SwipePage() {
         setCardIndex(index + 1);
     }
 
-    // Hide Swiper content until the GET request returns data
-    const Hide = (props) => businesses.length > 0 ? <>{props.children}</> : <></>
+    // Show loader until the GET request returns data
+    const Hide = (props) => {
+        if (businesses.length > 0) 
+            return <>{props.children}</>
+        else { 
+            return <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>
+        }
+    }
 
     return (
         <View style={styles.container}>
@@ -100,5 +106,8 @@ const styles = StyleSheet.create({
     },
     card: {
         height: '100%'
+    },
+    loader: {
+        flex: 1
     }
 });
