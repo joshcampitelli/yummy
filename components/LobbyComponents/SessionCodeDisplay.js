@@ -3,11 +3,12 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import LabeledSlider from './LabeledSlider';
+import Clipboard from '@react-native-clipboard/clipboard';
 
 export default function SessionCodeDisplay(props) {
 
   const onCopyCode = () => {
-    alert("copy")
+    Clipboard.setString(props.code);
   }
 
   const searchRadiusSlider = props.host ? <LabeledSlider min={1} max={50} unit="km"></LabeledSlider> : null;
