@@ -15,11 +15,11 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.containers.root}>
             <StatusBar style='light' />
-            <Header style={styles.header(48)} />
+            <Header />
             <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
                 <View style={styles.containers.createRoom}>
-                    <Button title='Create room'/>
+                    <Button title='Create room' onPress={() => navigation.navigate('Results')}/>
                 </View>
 
                 <View style={styles.containers.divider}>
