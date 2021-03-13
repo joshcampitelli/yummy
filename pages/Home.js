@@ -27,12 +27,14 @@ const Home = ({ navigation }) => {
                 </View>
 
                 <Text style={styles.header(36)}>👭 Friends waiting?</Text>
-                <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
+                <View style={{ width: "80%" }}>
+                    <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
+                </View>
                 <View style={styles.containers.joinRoom}>
                     <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('Swiping')} />
                 </View>
             </View>
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

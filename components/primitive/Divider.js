@@ -10,7 +10,7 @@ const Divider = (props) => {
 const styles = (props) => StyleSheet.create({
     divider: {
         height: props.height,
-        backgroundColor: '#fff',
+        backgroundColor: props.color ?? '#fff',
         width: '100%',
         opacity: 0.6,
     }

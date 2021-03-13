@@ -8,7 +8,7 @@ import Restaurant from '../components/Restaurant';
 import Swiper from 'react-native-deck-swiper'
 import * as data from '../data/api-test-data.json';
 
-export default function SwipePage() {
+export default function SwipePage({ navigation }) {
     function renderCard(card, index) {
         // Convert meters to kilometers and round to 1 decimal place
         let distanceKm = Math.round((data['businesses'][index].distance / 1000) * 10) / 10;
@@ -38,7 +38,6 @@ export default function SwipePage() {
                     marginBottom={10}
                     stackSize={2}/>
                 </View>
-            <Footer />
         </View>
     );
 }

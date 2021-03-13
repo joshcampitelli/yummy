@@ -15,7 +15,7 @@ const Results = ({ navigation }) => {
             <Header />
 
             <View style={styles.containers.body}>
-                <View style={{ flexDirection: 'row', justifyContent: "center" }}>
+                <View style={styles.containers.winner}>
                     <Text style={styles.components.winner}>WINNER</Text>
                 </View>
                 <View style={styles.containers.image}>
@@ -36,7 +36,7 @@ const Results = ({ navigation }) => {
                 </View>
 
             </View>
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }
@@ -82,6 +82,10 @@ const styles = {
             padding: 0,
             width: '80%',
             paddingVertical: 32
+        },
+        winner: {
+            flexDirection: 'row',
+            justifyContent: "center"
         },
         image: {
             flex: 1,
