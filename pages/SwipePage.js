@@ -11,6 +11,7 @@ const url = 'http://localhost:3000/restaurant_data';
 export default function SwipePage() {
     const [businesses, setBusinesses] = useState([]);
     const [cardIndex, setCardIndex] = useState(0); 
+    const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
 
     useEffect(() => {
         getData();
@@ -40,6 +41,10 @@ export default function SwipePage() {
     }
 
     function renderCard(card, index) {
+        if (!businesses[index]) {
+            return LOADER;
+        }
+
         // Convert meters to kilometers and round to 1 decimal place
         let distanceKm = Math.round((businesses[index].distance / 1000) * 10) / 10;
 
@@ -66,7 +71,7 @@ export default function SwipePage() {
         if (businesses.length > 0) 
             return <>{props.children}</>
         else { 
-            return <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>
+            return LOADER;
         }
     }
 
