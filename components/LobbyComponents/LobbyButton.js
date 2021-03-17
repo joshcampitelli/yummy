@@ -1,0 +1,26 @@
+import React from 'react';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+
+export default function LobbyButton(props) {
+
+  return (
+    <TouchableOpacity style={[styles.button, {backgroundColor: props.primary ? '#70EFDE' : '#DADADA'}]} onPress={props.onPress}>
+      <Text style={styles.text}>{props.text}</Text>       
+    </TouchableOpacity>
+  );
+}
+
+const styles = StyleSheet.create({
+	button: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		margin: 20,	
+		borderRadius: 50,
+		width: 120,
+		height: 40
+	},
+	text: {
+		color: '#000000',
+		fontSize: 16,
+	}
+});
