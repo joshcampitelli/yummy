@@ -3,7 +3,6 @@ require('dotenv').config();
 const yelp = require('yelp-fusion');
 const apiKey = process.env.API_KEY;
 const client = yelp.client(apiKey);
-const _ = require('lodash');
 
 /**
  * 
@@ -27,7 +26,7 @@ async function getNearby(latitude, longitude, radius, price, offset, limit = 5) 
 
     try {
         let result = await client.search(searchRequest);
-        let businessDetails = _.map(result.jsonBody.businesses, business => getDetails(business));
+        let businessDetails = result.jsonBody.businesses.map(business => getDetails(business));
         const businesses = await Promise.all(businessDetails);
         return JSON.stringify(businesses, null, 4);
     } catch(err) {
