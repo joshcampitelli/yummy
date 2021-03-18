@@ -10,7 +10,6 @@ const url = 'http://localhost:3000/restaurant_data';
 
 export default function SwipePage() {
     const [businesses, setBusinesses] = useState([]);
-    const [cardIndex, setCardIndex] = useState(0); 
     const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
 
     useEffect(() => {
@@ -62,17 +61,6 @@ export default function SwipePage() {
         if ((index - 2) % 5 === 0) {
             getData(index + 3);
         }
-
-        setCardIndex(index + 1);
-    }
-
-    // Show loader until the GET request returns data
-    const Hide = (props) => {
-        if (businesses.length > 0) 
-            return <>{props.children}</>
-        else { 
-            return LOADER;
-        }
     }
 
     return (
@@ -80,19 +68,16 @@ export default function SwipePage() {
             <StatusBar style="light" />
             <Header style={styles.header} />
             <View style={styles.swiper}>
-                <Hide>
-                    <Swiper
-                        cards={businesses}
-                        renderCard={renderCard}
-                        onSwiped={swiped}
-                        cardIndex={cardIndex}
-                        backgroundColor={'#292929'}
-                        cardVerticalMargin={0}
-                        verticalSwipe={false}
-                        cardStyle={styles.card}
-                        marginBottom={10}
-                        stackSize={2} />
-                </Hide>
+                <Swiper
+                    cards={{}}
+                    renderCard={renderCard}
+                    onSwiped={swiped}
+                    backgroundColor={'#292929'}
+                    cardVerticalMargin={0}
+                    verticalSwipe={false}
+                    cardStyle={styles.card}
+                    marginBottom={10}
+                    stackSize={2} />
             </View>
             <Footer />
         </View>
