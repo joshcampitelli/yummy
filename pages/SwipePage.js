@@ -1,27 +1,67 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Restaurant from '../components/Restaurant';
-
+import Restaurant from '../components/swiper/Restaurant';
 import Swiper from 'react-native-deck-swiper'
-import * as data from '../data/api-test-data.json';
+
+const url = 'http://localhost:3000/restaurant_data';
 
 export default function SwipePage() {
+    const [businesses, setBusinesses] = useState([]);
+    const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    async function getData(offset = 0) {
+        let data = {
+            latitude: 45.421532,
+            longitude: -75.697189,
+            radius: 20000,
+            price: '1, 2, 3, 4',
+            offset
+        }
+
+        try {
+            let results = await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: { 'Content-type': 'application/json' }
+            });
+
+            let content = await results.json();
+            setBusinesses(businesses.concat(content));
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     function renderCard(card, index) {
+        if (!businesses[index]) {
+            return LOADER;
+        }
+
         // Convert meters to kilometers and round to 1 decimal place
-        let distanceKm = Math.round((data['businesses'][index].distance / 1000) * 10) / 10;
+        let distanceKm = Math.round((businesses[index].distance / 1000) * 10) / 10;
 
         return (
-            <Restaurant 
-                images={data['businesses'][index].photos} 
-                name={data['businesses'][index].name} 
+            <Restaurant
+                images={businesses[index].photos}
+                name={businesses[index].name}
                 distance={distanceKm + ' Kilometers away'}
-                price={data['businesses'][index].price} 
-                description={data['businesses'][index].categories[0].title}/>
+                price={businesses[index].price}
+                description={businesses[index].categories[0].title} />
         )
     };
+
+    function swiped(index) {
+        if ((index - 2) % 5 === 0) {
+            getData(index + 3);
+        }
+    }
 
     return (
         <View style={styles.container}>
@@ -29,15 +69,16 @@ export default function SwipePage() {
             <Header style={styles.header} />
             <View style={styles.swiper}>
                 <Swiper
-                    cards={[...data['businesses'].keys()]}
+                    cards={{}}
                     renderCard={renderCard}
+                    onSwiped={swiped}
                     backgroundColor={'#292929'}
                     cardVerticalMargin={0}
                     verticalSwipe={false}
                     cardStyle={styles.card}
                     marginBottom={10}
-                    stackSize={2}/>
-                </View>
+                    stackSize={2} />
+            </View>
             <Footer />
         </View>
     );
@@ -55,5 +96,8 @@ const styles = StyleSheet.create({
     },
     card: {
         height: '100%'
+    },
+    loader: {
+        flex: 1
     }
 });
