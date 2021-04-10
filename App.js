@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import Swiping from './pages/SwipePage';
 import Results from './pages/Results';
 import Settings from './pages/Settings';
+import GuestLobby from './pages/GuestLobby';
+import HostLobby from './pages/HostLobby';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 
@@ -15,6 +17,12 @@ export default function App() {
                 <Stack.Screen
                     name="Home"
                     component={Home} />
+                <Stack.Screen
+                    name="GuestLobby"
+                    component={GuestLobby} />
+                <Stack.Screen
+                    name="HostLobby"
+                    component={HostLobby} />
                 <Stack.Screen
                     name="Swiping"
                     component={Swiping} />

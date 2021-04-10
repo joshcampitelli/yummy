@@ -58,6 +58,12 @@ export default function SwipePage({ navigation }) {
     };
 
     function swiped(index) {
+        // temporary move to results page after 15 swipes so
+        // we could access the results page.
+        if (index == 15) {
+          navigation.navigate('Results');
+        }
+
         if ((index - 2) % 5 === 0) {
             getData(index + 3);
         }

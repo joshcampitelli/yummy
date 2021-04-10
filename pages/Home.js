@@ -19,7 +19,7 @@ const Home = ({ navigation }) => {
             <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
                 <View style={styles.containers.createRoom}>
-                    <Button title='Create room' onPress={() => navigation.navigate('Results')}/>
+                    <Button title='Create room' onPress={() => navigation.navigate('HostLobby')}/>
                 </View>
 
                 <View style={styles.containers.divider}>
@@ -31,7 +31,7 @@ const Home = ({ navigation }) => {
                     <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
                 </View>
                 <View style={styles.containers.joinRoom}>
-                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('Swiping')} />
+                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('GuestLobby')} />
                 </View>
             </View>
             <Footer navigation={navigation} />

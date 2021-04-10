@@ -27,10 +27,10 @@ const Results = ({ navigation }) => {
                     <Text style={styles.components.restaurant}>Riviera</Text>
                     <View style={styles.containers.actions}>
                         <View style={styles.components.action}>
-                            <Button title="Directions"/>
+                            <Button title="Directions" onPress={() => navigation.navigate('Home')} />
                         </View>
                         <View style={styles.components.action}>
-                            <Button title="New Session" background="#DADADA" />
+                            <Button title="Home" background="#DADADA" onPress={() => navigation.navigate('Home')} />
                         </View>
                     </View>
                 </View>

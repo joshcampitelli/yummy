@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import FriendList from '../components/LobbyComponents/FriendList';
 import SessionCodeDisplay from '../components/LobbyComponents/SessionCodeDisplay'
 
-export default function GuestLobby() {
+export default function GuestLobby({ navigation }) {
 
     const friends = [
         {
