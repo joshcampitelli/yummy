@@ -7,10 +7,27 @@ import Footer from '../components/Footer';
 import Button from '../components/primitive/Button';
 import Divider from '../components/primitive/Divider';
 import Textfield from '../components/primitive/Textfield';
+import { io } from 'socket.io-client';
 
 const Home = ({ navigation }) => {
+    const [ joinText, setJoinText ] = React.useState('');
+    let socket;
 
-    const [ join, setJoinText ] = React.useState('');
+    React.useEffect(() => {
+        socket = io('http://192.168.2.74:3000');
+        socket.on('result', msg => {
+            navigation.navigate('Swiping')
+        });
+    }, [])
+
+    function join() {
+        if (socket) socket.emit('join-room', 'J9SBA2');
+        navigation.navigate('Swiping')
+    }
+
+    function createRoom() {
+        socket.emit('create-room');
+    }
 
     return (
         <View style={styles.containers.root}>
@@ -19,7 +36,7 @@ const Home = ({ navigation }) => {
             <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
                 <View style={styles.containers.createRoom}>
-                    <Button title='Create room'/>
+                    <Button title='Create room' onPress={createRoom}/>
                 </View>
 
                 <View style={styles.containers.divider}>
@@ -29,7 +46,7 @@ const Home = ({ navigation }) => {
                 <Text style={styles.header(36)}>👭 Friends waiting?</Text>
                 <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
                 <View style={styles.containers.joinRoom}>
-                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('Swiping')} />
+                    <Button title='Join' disabled={joinText === ''} onPress={join} />
                 </View>
             </View>
             <Footer />

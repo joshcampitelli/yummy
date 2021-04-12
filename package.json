@@ -34,6 +34,8 @@
     "react-native-svg": "^12.1.0",
     "react-native-web": "~0.13.12",
     "react-navigation-stack": "^2.10.2",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
     "yelp-fusion": "^3.0.0"
   },
   "devDependencies": {

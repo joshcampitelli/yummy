@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Restaurant from '../components/swiper/Restaurant';
 import Swiper from 'react-native-deck-swiper'
 
-const url = 'http://localhost:3000/restaurant_data';
+const url = 'http://192.168.5.15:3000/restaurant_data';
 
 export default function SwipePage() {
     const [businesses, setBusinesses] = useState([]);
@@ -18,8 +18,8 @@ export default function SwipePage() {
 
     async function getData(offset = 0) {
         let data = {
-            latitude: 45.421532,
-            longitude: -75.697189,
+            latitude: 44.305908,
+            longitude: -78.320091,
             radius: 20000,
             price: '1, 2, 3, 4',
             offset
