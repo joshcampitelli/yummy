@@ -78,7 +78,7 @@ export default function HostLobby({ navigation }) {
                 <LobbyButton text="Cancel" onPress={onCancel} />
             </View>
 
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

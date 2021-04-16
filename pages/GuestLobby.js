@@ -56,7 +56,7 @@ export default function GuestLobby({ navigation }) {
             <Text style={styles.header} >Waiting for host to start</Text>
             <ActivityIndicator size='large' color='#70EFDE' style={styles.spinner} />
 
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

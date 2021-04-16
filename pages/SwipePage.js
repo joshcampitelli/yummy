@@ -85,7 +85,7 @@ export default function SwipePage({ navigation }) {
                     marginBottom={10}
                     stackSize={2} />
             </View>
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }
