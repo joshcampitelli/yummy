@@ -60,7 +60,7 @@ export default function SwipePage({ navigation }) {
     function swiped(index) {
         // temporary move to results page after 15 swipes so
         // we could access the results page.
-        if (index == 15) {
+        if (index == 14) {
           navigation.navigate('Results');
         }
 
