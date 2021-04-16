@@ -15,11 +15,11 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.containers.root}>
             <StatusBar style='light' />
-            <Header style={styles.header(48)} />
+            <Header />
             <View style={styles.containers.body}>
                 <Text style={styles.header(48)}>Discover your next meal</Text>
                 <View style={styles.containers.createRoom}>
-                    <Button title='Create room'/>
+                    <Button title='Create room' onPress={() => navigation.navigate('HostLobby')}/>
                 </View>
 
                 <View style={styles.containers.divider}>
@@ -27,12 +27,14 @@ const Home = ({ navigation }) => {
                 </View>
 
                 <Text style={styles.header(36)}>👭 Friends waiting?</Text>
-                <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
+                <View style={{ width: "80%" }}>
+                    <Textfield placeholder='J9SBA2' onChange={(text) => setJoinText(text)}/>
+                </View>
                 <View style={styles.containers.joinRoom}>
-                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('Swiping')} />
+                    <Button title='Join' disabled={join === ''} onPress={() => navigation.navigate('GuestLobby')} />
                 </View>
             </View>
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

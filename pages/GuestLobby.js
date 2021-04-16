@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import FriendList from '../components/LobbyComponents/FriendList';
 import SessionCodeDisplay from '../components/LobbyComponents/SessionCodeDisplay'
 
-export default function GuestLobby() {
+export default function GuestLobby({ navigation }) {
 
     const friends = [
         {
@@ -56,7 +56,7 @@ export default function GuestLobby() {
             <Text style={styles.header} >Waiting for host to start</Text>
             <ActivityIndicator size='large' color='#70EFDE' style={styles.spinner} />
 
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

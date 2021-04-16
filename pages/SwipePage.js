@@ -8,7 +8,7 @@ import Swiper from 'react-native-deck-swiper'
 
 const url = 'http://localhost:3000/restaurant_data';
 
-export default function SwipePage() {
+export default function SwipePage({ navigation }) {
     const [businesses, setBusinesses] = useState([]);
     const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
 
@@ -58,6 +58,12 @@ export default function SwipePage() {
     };
 
     function swiped(index) {
+        // temporary move to results page after 15 swipes so
+        // we could access the results page.
+        if (index == 14) {
+          navigation.navigate('Results');
+        }
+
         if ((index - 2) % 5 === 0) {
             getData(index + 3);
         }
@@ -79,7 +85,7 @@ export default function SwipePage() {
                     marginBottom={10}
                     stackSize={2} />
             </View>
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }

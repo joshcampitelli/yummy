@@ -4,7 +4,7 @@ import { StyleSheet, TouchableOpacity, Text } from 'react-native';
 const Button = (props) => {
     return (
         <TouchableOpacity
-            style={styles.button(props.disabled)}
+            style={styles.button(props)}
             onPress={props.onPress}
             disabled={props.disabled} >
             <Text style={styles.text}>{props.title}</Text>
@@ -13,18 +13,19 @@ const Button = (props) => {
 }
 
 const styles = {
-    button: (disabled) => StyleSheet.flatten({
-        backgroundColor: '#70EFDE',
+    button: (props) => StyleSheet.flatten({
+        backgroundColor: props.background ?? '#70EFDE',
         borderRadius: 50,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        opacity: disabled ? 0.3 : 1,
+        opacity: props.disabled ? 0.3 : 1,
+        width: "100%",
     }),
     ...StyleSheet.create({
         text: {
             paddingVertical: 18,
-            fontSize: 24,
+            fontSize: 18,
             width: 'auto',
         },
     })

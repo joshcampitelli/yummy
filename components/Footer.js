@@ -5,7 +5,7 @@ import invite from '../assets/happy.png';
 import profile from '../assets/user_pin.png';
 import settings from '../assets/settings_filled.png';
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <View style={styles.footer}>
             <TouchableOpacity style={styles.invite}>
@@ -16,7 +16,7 @@ export default function Footer() {
                 <Image source={profile}/>
                 <Text style={styles.text}>Profile</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.invite}>
+            <TouchableOpacity style={styles.invite} onPress={() => props.navigation.navigate('Settings')}>
                 <Image source={settings}/>
                 <Text style={styles.text}>Settings</Text>
             </TouchableOpacity>

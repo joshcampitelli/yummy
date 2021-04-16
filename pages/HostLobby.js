@@ -6,7 +6,7 @@ import FriendList from '../components/LobbyComponents/FriendList';
 import SessionCodeDisplay from '../components/LobbyComponents/SessionCodeDisplay';
 import LobbyButton from '../components/LobbyComponents/LobbyButton';
 
-export default function HostLobby() {
+export default function HostLobby({ navigation }) {
 
     const friends = [
         {
@@ -41,11 +41,11 @@ export default function HostLobby() {
     const [searchRadius, setSearchRadius] = useState(parseInt((minSearchRadius + maxSearchRadius) / 2));
 
     const onStart = () => {
-        alert('Start. Search radius: ' + searchRadius);
+        navigation.navigate('Swiping');
     }
 
     const onCancel = () => {
-        alert('Cancel');
+        navigation.navigate('Home');
     }
 
     return (
@@ -78,7 +78,7 @@ export default function HostLobby() {
                 <LobbyButton text="Cancel" onPress={onCancel} />
             </View>
 
-            <Footer />
+            <Footer navigation={navigation} />
         </View>
     );
 }
