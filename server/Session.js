@@ -9,11 +9,9 @@ class Session {
     }
 
     addUser(user){
-        this.users.push(user);
-    }
-
-    getUsers(){
-        return this.users;
+        if(!this.users.includes(user)){
+            this.users.push(user);
+        }     
     }
 
     addRestaurants(restaurants){
@@ -35,9 +33,4 @@ class Session {
 
         return false;
     }
-
-    getSearchParameters(){
-        return this.apiSearchParameters;
-    }
-
 }
