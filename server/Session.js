@@ -1,4 +1,4 @@
-class Session {
+export class Session {
 
     constructor(host, searchParameters) {
         this.users = [host];
