@@ -1,4 +1,4 @@
-import { Session } from "./Session";
+import Session from "./Session";
 var roomCodeGenerator = require("randomstring")
 
 const roomSocketIds = new Map();
