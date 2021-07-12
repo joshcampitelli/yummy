@@ -1,0 +1,1 @@
+export const selectCurrentGameRestaurants = (state) => state['SWIPING_REDUCER'].restaurants;
