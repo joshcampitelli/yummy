@@ -5,7 +5,7 @@ import Swiper from 'react-native-deck-swiper';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Restaurant from '../../components/swiper/Restaurant';
-import { useAvailableRestaurants } from './hooks/use-available-restaurants.hook';
+import { useAvailableRestaurants } from './hooks';
 
 export const SwipePage = ({
   navigation,
