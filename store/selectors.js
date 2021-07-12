@@ -1,4 +1,1 @@
-export const selectCurrentGameRestaurants = (state) => {
-  console.log(state);
-  return state['SWIPING_REDUCER'].restaurants
-};
+export const selectCurrentGameRestaurants = (state) => state['SWIPING_REDUCER'].restaurants;
