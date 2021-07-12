@@ -26,6 +26,9 @@
     "no-console": [
       0
     ],
+    "import/prefer-default-export": [
+      0
+    ],
     "react/jsx-indent": [
       2,
       2

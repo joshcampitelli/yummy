@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import Swiper from 'react-native-deck-swiper';
 import Header from '../../components/Header';
@@ -8,7 +8,7 @@ import Restaurant from '../../components/swiper/Restaurant';
 import { useAvailableRestaurants } from './hooks/use-available-restaurants.hook';
 
 export const SwipePage = ({
-  navigation
+  navigation,
 }) => {
   const restaurants = useAvailableRestaurants();
   const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
@@ -64,7 +64,7 @@ export const SwipePage = ({
       <Footer navigation={navigation} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

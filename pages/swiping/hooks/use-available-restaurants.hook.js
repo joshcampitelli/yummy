@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-import { selectCurrentGameRestaurants } from  '../../../store/selectors'
 import { useSelector, useDispatch } from 'react-redux';
+import { selectCurrentGameRestaurants } from '../../../store/selectors';
 import { fetchEligibleRestaurants } from '../../../store/swiping';
 
 export const useAvailableRestaurants = () => {
@@ -12,13 +12,13 @@ export const useAvailableRestaurants = () => {
   useEffect(() => {
     (async () => {
       dispatch(await fetchEligibleRestaurants());
-    })(); 
+    })();
   }, []);
 
   return {
     current: restaurants,
     fetchMore: async (offset = 0) => {
       dispatch(await fetchEligibleRestaurants(offset));
-    }
-  }
-}
+    },
+  };
+};

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -48,6 +48,10 @@ export default function HostLobby({ navigation }) {
   const onCancel = () => {
     navigation.navigate('Home');
   };
+
+  useEffect(() => {
+    // Empty useEffect until searchRadius is being used.
+  }, [searchRadius]);
 
   return (
     <View style={styles.container}>
