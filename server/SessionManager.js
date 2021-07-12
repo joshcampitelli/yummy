@@ -3,8 +3,8 @@ var roomCodeGenerator = require("randomstring")
 
 const roomSocketIds = new Map();
 const sessions = new Map();
-const roomCodeLength = 6;
-const roomCodeCharset = 'ABCEFGHJKLMNPQRSTUVWXYZ23456789'
+const ROOM_CODE_LENGTH = 6;
+const ROOM_CODE_CHARSET = 'ABCEFGHJKLMNPQRSTUVWXYZ23456789'
 
 export function registerSession(host, apiSearchParameters, socketId) {
 
@@ -33,7 +33,7 @@ export function startSession(roomCode) {
 
     if (roomSocketIds.has(roomCode)) {
 
-        //Start session, get restaurants and add them to session object
+        //TODO: Start session, get restaurants and add them to session object
 
         return true;
     }
@@ -43,15 +43,15 @@ export function startSession(roomCode) {
 
 export function generateRoomCode() {
     var roomCode = roomCodeGenerator.generate({
-        length: roomCodeLength,
-        charset: roomCodeCharset
+        length: ROOM_CODE_LENGTH,
+        charset: ROOM_CODE_CHARSET
     });
 
     //While code exists, generate new code
     while (roomSocketIds.has(roomCode)) {
         roomCode = roomCodeGenerator.generate({
-            length: roomCodeLength,
-            charset: roomCodeCharset
+            length: ROOM_CODE_LENGTH,
+            charset: ROOM_CODE_CHARSET
         });
     }
 

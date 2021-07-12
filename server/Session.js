@@ -8,13 +8,13 @@ export default class Session {
 
     }
 
-    addUser(user){
-        if(!this.users.includes(user)){
+    addUser(user) {
+        if (!this.users.includes(user)) {
             this.users.push(user);
-        }     
+        }
     }
 
-    addRestaurants(restaurants){
+    addRestaurants(restaurants) {
         this.restaurants.push(restaurants);
     }
 
@@ -27,10 +27,6 @@ export default class Session {
             this.rightSwipes.set(restaurantId, this.rightSwipes.get(restaurantId) + 1);
         }
 
-        if(this.rightSwipes.get(restaurantId) >= this.users.length){
-            return true;
-        }
-
-        return false;
+        return this.rightSwipes.get(restaurantId) >= this.users.length
     }
 }
