@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { useEffect } from 'react/cjs/react.production.min';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FriendList from '../components/LobbyComponents/FriendList';
@@ -41,10 +40,6 @@ export default function HostLobby({ navigation }) {
   const [searchRadius, setSearchRadius] = useState(
     parseInt((minSearchRadius + maxSearchRadius) / 2, 10),
   );
-
-  useEffect(() => {
-    // do something when search radius updates
-  }, [searchRadius]);
 
   const onStart = () => {
     navigation.navigate('Swiping');

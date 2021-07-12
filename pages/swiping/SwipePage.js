@@ -2,58 +2,34 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import Swiper from 'react-native-deck-swiper';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Restaurant from '../components/swiper/Restaurant';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Restaurant from '../../components/swiper/Restaurant';
+import { useAvailableRestaurants } from './hooks/use-available-restaurants.hook';
 
-const url = 'http://localhost:3000/restaurant_data';
-
-export default function SwipePage({ navigation }) {
-  const [businesses, setBusinesses] = useState([]);
+export const SwipePage = ({
+  navigation
+}) => {
+  const restaurants = useAvailableRestaurants();
   const LOADER = <ActivityIndicator size="large" color="#70EFDE" style={styles.loader}/>;
 
-  useEffect(() => {
-    getData();
-  }, []);
-
-  async function getData(offset = 0) {
-    const data = {
-      latitude: 45.421532,
-      longitude: -75.697189,
-      radius: 20000,
-      price: '1, 2, 3, 4',
-      offset,
-    };
-
-    try {
-      const results = await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: { 'Content-type': 'application/json' },
-      });
-
-      const content = await results.json();
-      setBusinesses(businesses.concat(content));
-    } catch (error) {
-      throw new Error(error);
-    }
-  }
-
   function renderCard(card, index) {
-    if (!businesses[index]) {
+    const { current: availableRestaurants } = restaurants;
+
+    if (!availableRestaurants[index]) {
       return LOADER;
     }
 
     // Convert meters to kilometers and round to 1 decimal place
-    const distanceKm = Math.round((businesses[index].distance / 1000) * 10) / 10;
+    const distanceKm = Math.round((availableRestaurants[index].distance / 1000) * 10) / 10;
 
     return (
       <Restaurant
-        images={businesses[index].photos}
-        name={businesses[index].name}
+        images={availableRestaurants[index].photos}
+        name={availableRestaurants[index].name}
         distance={`${distanceKm} Kilometers away`}
-        price={businesses[index].price}
-        description={businesses[index].categories[0].title} />
+        price={availableRestaurants[index].price}
+        description={availableRestaurants[index].categories[0].title} />
     );
   }
 
@@ -65,7 +41,7 @@ export default function SwipePage({ navigation }) {
     }
 
     if ((index - 2) % 5 === 0) {
-      getData(index + 3);
+      restaurants.fetchMore(index + 3);
     }
   }
 
